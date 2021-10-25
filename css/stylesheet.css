@@ -11,12 +11,28 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 body{
   line-height: 1.6rem;
   background-color: var(--background-color);
+  text-decoration: none;
+  list-style-type: none;
 }
+
+li {
+  list-style-type: none;
+}
+
+/****
+Flexbox
+*****/
+
+.flex{
+  display: flex;
+}
+
 
 /****
 Font Sizes
@@ -26,7 +42,6 @@ Font Sizes
 }
 .lead{
   font-size: 20px;
-  font-family: 'Big Shoulders Text', cursive;
 }
 .sm{
   font-size: 1rem;
@@ -60,6 +75,21 @@ Font Colors
 }
 .text-dark{
   color: var(--text-color);
+}
+
+/***** 
+Elements
+******/
+
+/******
+Navibar
+*******/
+
+nav ul{
+  max-width: 200px;
+  margin: auto;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 /*****************
