@@ -33,6 +33,30 @@ Flexbox
   display: flex;
 }
 
+/****
+Container
+*****/
+.container{
+  max-width: 1024px;
+  margin: 0 auto;
+  border: 1px solid blue;
+  padding-bottom: 1em;
+}
+
+/****
+Grid
+*****/
+.grid{
+  display: grid;
+  /* overflow: visible; */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border: 1px solid green;
+  /* grid-template-columns: repeat(3, 1fr); */
+}
 
 /****
 Font Sizes
@@ -92,6 +116,10 @@ nav ul{
   align-items: center;
 }
 
+nav ul li:hover {
+  color:var(--primary-color);
+  transform: scale(1.05);
+}
 /*****************
 Margins and padding
 *******************/
@@ -218,3 +246,18 @@ Margins and padding
   padding: 4rem;
 }
 
+@media(min-width: 768px){
+  .navibar{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+  nav ul {
+    margin: 0;
+  }
+
+  nav ul li{
+    margin-right: 1em;
+  } 
+}
+ 
