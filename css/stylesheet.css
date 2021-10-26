@@ -305,17 +305,35 @@ Margins and padding
 
 @media(min-width: 768px){
   
-  .navibarWrap .grid{
-    grid-template-columns: [logo] 60% [ul] 40%;
-    grid-template-rows: 1fr;
+  .mega-grid{
+    display: flex;
   }
 
-  .logo {
-    justify-self: self-start;
+  .navibarWrapper nav {
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  ul {
-    justify-self: self-end;
+  .navibarWrapper nav h2 {
+    font-size: 2.5rem; 
+    margin-bottom: 2rem;
+  }
+
+  .navibarWrapper nav ul {
+    flex-direction: column;
+  }
+
+  .navibarWrapper nav ul li{
+    font-size: 1.5rem;
+  }
+  
+  .navibarWrapper {
+    height: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
   }
 
   .galleryWrap .grid{
