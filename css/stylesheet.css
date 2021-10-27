@@ -58,7 +58,12 @@ Grid
   justify-items: center;
   align-items: center;
   height: 100%;
-  /* border: 1px solid green; */
+}
+
+.contact .grid{
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  gap: 2px;
 }
 
 /****
@@ -67,6 +72,12 @@ Images
 
 img {
   width: 100%;
+}
+
+.about img{
+  width: 60%;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px var(--text-color);
 }
 
 
@@ -78,6 +89,9 @@ Font Sizes
 }
 .lead{
   font-size: 20px;
+}
+.xsm{
+  font-size: 0.8rem;
 }
 .sm{
   font-size: 1rem;
@@ -176,6 +190,24 @@ Gallery
   width: 100%;
   height: 100%;
 }
+
+/******
+About
+*******/
+
+.aboutWrap .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blurb{
+  padding-top: 2em;
+}
+
+
+
 
 /*****************
 Margins and padding
