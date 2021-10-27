@@ -54,7 +54,7 @@ Grid
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, 1fr);
-  gap: 8px;
+  gap: 0px;
   justify-items: center;
   align-items: center;
   height: 100%;
@@ -150,27 +150,32 @@ Gallery
   gap: 4px;
 }
 
-.galleryWrap .grid :first-child{
+.galleryWrap .grid a:first-child{
   grid-column: 1/ span 2 ;
   grid-row: 1 / span 2;
 }
-.galleryWrap .grid :nth-child(5){
+.galleryWrap .grid a:nth-child(5){
   grid-column: 2/ span 2   ;
   height: 100%;
 }
-.galleryWrap .grid :nth-child(7){
+.galleryWrap .grid a:nth-child(7){
   grid-column: 2 / span 2 ;
   grid-row: 4  / span 2;
 }
-.galleryWrap .grid :nth-child(10){
+.galleryWrap .grid a:nth-child(10){
   grid-column: 1 / span 2 ;
   grid-row: 6  / span 2;
 }
-.galleryWrap .grid :nth-child(12){
+.galleryWrap .grid a:nth-child(12){
   grid-column: 2 / span 2 ;
   grid-row: 8  / span 2;
 }
 
+.galleryWrap .grid img,
+.galleryWrap .grid a{
+  width: 100%;
+  height: 100%;
+}
 
 /*****************
 Margins and padding
@@ -330,6 +335,7 @@ Margins and padding
   }
   
   .navibarWrapper {
+    min-width: 332px;
     height: 100%;
     position: -webkit-sticky;
     position: sticky;
@@ -339,28 +345,27 @@ Margins and padding
   .galleryWrap .grid{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr
   }
-
-  .galleryWrap .grid :nth-child(4){
+  .galleryWrap .grid a:nth-child(4){
     grid-column: 4 / span 2 ;
     grid-row: 2  / span 2;
   }
-  .galleryWrap .grid :nth-child(14){
+  .galleryWrap .grid a:nth-child(14){
     grid-column: 1 / span 2 ;
     grid-row: 4  / span 2;
   }
-  .galleryWrap .grid :nth-child(5){
+  .galleryWrap .grid a:nth-child(7){
+    grid-column: 4 / span 1 ;
+    grid-row: 5  / span 1;
+  }
+  .galleryWrap .grid a:nth-child(5){
     grid-column: 4 / span 2 ;
     grid-row: 1  / span 1;
   }
-  .galleryWrap .grid :nth-child(7){
-    grid-column: 2 / span 1 ;
-    grid-row: 4  / span 1;
-  }
-  .galleryWrap .grid :nth-child(10){
+  .galleryWrap .grid a:nth-child(10){
     grid-column: 3 / span 1 ;
     grid-row: 5  / span 1;
   }
-  .galleryWrap .grid :nth-child(12){
+  .galleryWrap .grid a:nth-child(12){
     grid-column: 4 / span 1 ;
     grid-row: 4  / span 1;
   }

@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Giovanni's Photography</title>
 
-
-  <!--Local Styling-->
+  <!--LightBox-->
   <link rel="stylesheet" href="css/simple-lightbox.min.css">
+  <!--Local Styling-->
   <link rel="stylesheet" href="css/stylesheet.css">
 
 </head>
@@ -21,6 +21,7 @@
       <nav class="flex container p-2">
         <h2 class="text-primary lg big-shoulders"> <span class="text-dark">PicturesBy</span> Giovanni</h2>
         <ul class="flex">
+          <li class="big-shoulders md "> <a  href="#home">Home</a> </li>
           <li class="big-shoulders md "> <a  href="#about">About</a> </li>
           <li class="big-shoulders md "> <a href="#contact">Contact</a> </li>
         </ul>
@@ -28,26 +29,38 @@
     </section>
 
   <!--Gallery-->
-  <section class="galleryWrap">
-    <div class=" grid">
-      <img src="images/pic3.jpg" alt="">
-      <img src="images/pic1.jpg" alt="">
-      <img src="images/pic11.jpg" alt="">
-      <img src="images/pic13.jpg" alt="">
-      <img class="picturetwo" src="images/pic2.jpg" alt="">
-      <img src="images/pic6.jpg" alt="">
-      <img src="images/pic4.jpg" alt="">
-      <img src="images/pic5.jpg" alt="">
-      <img src="images/pic7.jpg" alt="">
-      <img src="images/pic8.jpg" alt="">
-      <img src="images/pic12.jpg" alt="">
-      <img src="images/pic15.jpg" alt="">
-      <img src="images/pic14.jpg" alt="">
-      <img src="images/pic9.jpg" alt="">
+  <section class="galleryWrap ">
+    <div class="gallery grid">
+      <a href="images/pic3.jpg" class="big"><img src="images/pic3.jpg" alt=""></a>
+      <a href="images/pic1.jpg" class="big"><img src="images/pic1.jpg" alt=""></a>
+      <a href="images/pic11.jpg" class="big"><img src="images/pic11.jpg" alt=""></a>
+      <a href="images/pic13.jpg" class="big"><img src="images/pic13.jpg" alt=""></a>
+      <a href="images/pic2.jpg" class="big"><img class="picturetwo" src="images/pic2.jpg" alt=""></a>
+      <a href="images/pic6.jpg" class="big"><img src="images/pic6.jpg" alt=""></a>
+      <a href="images/pic4.jpg" class="big"><img src="images/pic4.jpg" alt=""></a>
+      <a href="images/pic5.jpg" class="big"><img src="images/pic5.jpg" alt=""></a>
+      <a href="images/pic7.jpg" class="big"><img src="images/pic7.jpg" alt=""></a>
+      <a href="images/pic8.jpg" class="big"><img src="images/pic8.jpg" alt=""></a>
+      <a href="images/pic12.jpg" class="big"><img src="images/pic12.jpg" alt=""></a>
+      <a href="images/pic15.jpg" class="big"><img src="images/pic15.jpg" alt=""></a>
+      <a href="images/pic14.jpg" class="big"><img src="images/pic14.jpg" alt=""></a>
+      <a href="images/pic9.jpg" class="big"><img src="images/pic9.jpg" alt=""></a>
     </div> 
   </section>
 </div><!--Megagrid-->
 
+
+<!--JQuery-->
+
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js">
+</script>-->
+
+<!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script> -->
+
+<script src="js/simple-lightbox.min.js"></script>
+<script>
+  new SimpleLightbox('.gallery a', { /* options */ });
+</script>
 
 </body>
 </html>
