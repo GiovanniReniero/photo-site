@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="css/simple-lightbox.min.css">
   <!--Local Styling-->
   <link rel="stylesheet" href="css/stylesheet.css">
-
+  <!--JavaScript-->
+  <script src="js/script.js" defer></script>
 </head>
 <body #id="home">
   
@@ -21,11 +22,20 @@
         <h2 class="text-primary lg big-shoulders"> <span class="text-dark">PicturesBy</span> Giovanni</h2>
         <ul class="flex">
           <li class="big-shoulders md "> <a  href="index.html">Home</a> </li>
-          <li class="big-shoulders md "> <a  href="about.html">About</a> </li>
-          <li class="big-shoulders md "> <a href="#contact">Contact</a> </li>
+          <li class="big-shoulders md"> 
+            <div class="dropdown" data-dropdown>
+              <a class="link" data-dropdown-link href="#">Work</a> 
+              <div class="dropdown-menu sm">
+                <a href="#advertising">Advertising</a>  
+                <a href="#product">Product</a>
+              </div>
+            </div>
+          </li>
+          <li class="big-shoulders md "> <a  href="about.html">About/Contact</a> </li>
         </ul>
       </nav>
     </section>
+
 
   <!--Gallery-->
   <section class="galleryWrap ">
@@ -44,6 +54,7 @@
       <a href="images/pic15.jpg" class="big"><img src="images/pic15.jpg" alt=""></a>
       <a href="images/pic14.jpg" class="big"><img src="images/pic14.jpg" alt=""></a>
       <a href="images/pic9.jpg" class="big"><img src="images/pic9.jpg" alt=""></a>
+      <a href="images/pic16.jpg" class="big"><img src="images/pic16.jpg" alt=""></a>
     </div> 
   </section>
 </div><!--Megagrid-->
