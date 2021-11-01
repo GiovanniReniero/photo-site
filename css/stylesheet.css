@@ -61,7 +61,7 @@ Grid
 }
 
 .contact .grid{
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(20% 40% 40%);
   grid-template-rows: 1fr;
   gap: 2px;
 }
@@ -78,6 +78,10 @@ img {
   width: 40%;
   border-radius: 8px;
   box-shadow: 2px 2px 4px var(--text-color);
+}
+
+.cityandguilds img{
+  max-height: 100px;
 }
 
 
@@ -435,7 +439,8 @@ Margins and padding
   }
   
   .galleryWrap .grid{
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-tempate-rows: repeat(10, 1fr)
   }
   .galleryWrap .grid a:nth-child(4){
     grid-column: 4 / span 2 ;
@@ -465,8 +470,12 @@ Margins and padding
     grid-column: 4 / span 2 ;
     grid-row: 5  / span 2;
   }
-  .galleryWrap .grid a:nth-child(15){
+  .galleryWrap .grid a:nth-child(16){
     grid-column: 3 / span 2 ;
     grid-row: 4 / span 1;
+  }
+  .galleryWrap .grid a:nth-child(15){
+    grid-column: 2 / span 2 ;
+    grid-row: 6 / span 2;
   }
 
