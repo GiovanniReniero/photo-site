@@ -220,7 +220,19 @@ Galleries
 }
 .galleryWrap .grid a:nth-child(15){
   grid-column: 1 / span 2 ; 
+  grid-row: 10  / span 2; 
+}
+.galleryWrap .grid a:nth-child(16){
+  grid-column: 2 / span 2 ; 
+  grid-row: 12  / span 2; 
+}
+.galleryWrap .grid a:nth-child(17){
+  grid-column: 3 / span 1 ; 
   grid-row: 10  / span 1; 
+}
+.galleryWrap .grid a:nth-child(18){
+  grid-column: 3 / span 1 ; 
+  grid-row: 11  / span 1; 
 }
 
 .theatreGalleryWrap .grid > :nth-child(5){
@@ -440,7 +452,7 @@ Margins and padding
   
   .galleryWrap .grid{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-tempate-rows: repeat(10, 1fr)
+    grid-template-rows: repeat(10, 1fr);
   }
   .galleryWrap .grid a:nth-child(4){
     grid-column: 4 / span 2 ;
@@ -477,5 +489,13 @@ Margins and padding
   .galleryWrap .grid a:nth-child(15){
     grid-column: 2 / span 2 ;
     grid-row: 6 / span 2;
+  }
+  .galleryWrap .grid a:nth-child(17){
+    grid-column: 4 / span 2 ;
+    grid-row: 7 / span 2;
+  }
+  .galleryWrap .grid a:nth-child(18){
+    grid-column: 1 / span 1 ;
+    grid-row: 7 / span 1;
   }
 
