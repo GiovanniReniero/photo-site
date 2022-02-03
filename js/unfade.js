@@ -1,19 +1,24 @@
+
 // Blurr the entire page
 
 const body = document.body
-
-console.log(body)
+const containerAll = document.querySelector(".containerAll")
+const picsBy = document.querySelector(".picsBy ")
 
 repetitions = 0
 
 const unblur = setInterval(() => {
   repetitions++
   let scaleFilter = scale(repetitions, 0, 100, 25, 0)
+  let scalePicsBy = scale(repetitions, 0, 100, 1, 0)
   console.log(repetitions)
   console.log(scaleFilter)
-  body.style.filter = `blur(${scaleFilter}px`
+
+  console.log(scalePicsBy)
+  containerAll.style.filter = `blur(${scaleFilter}px`
+  picsBy.style.opacity=`${scalePicsBy}`
   timeGuard()  
-}, 30);
+}, 15);
 
 function timeGuard(){
   if (repetitions === 100 ){
@@ -21,12 +26,8 @@ function timeGuard(){
   }
 }
 
-// function scale(repetitions, aMax, bmin, cMax, dmin){
-  // return (repetitions-bmin)*(aMax-bmin)/(cMax-dmin) + dmin
-// }
-
 function scale (number, inMin, inMax, outMin, outMax) {
   return (number - inMin) * (outMax - outMin) / (inMax - inMin) + outMin;
 }
 
-window.onload = unblur
+// window.onload = unblur

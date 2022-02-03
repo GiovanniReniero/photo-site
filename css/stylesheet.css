@@ -16,13 +16,37 @@
 body{
   line-height: 1.6;
   background-color: var(--background-color);
-  filter: blur(25px)
+}
+
+.containerAll{
+  filter: blur(25px);
+  position: relative;
+  text-align: center;
+  
 }
 
 h1, h2, h3, h4, h5, h6, p,
 a {
   text-decoration: none;
   color: var(--text-color);
+}
+
+.picsBy{
+  text-align: center;
+  opacity: 1;
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  top: 48vh;
+  padding: 0 1rem;
+  z-index: 2;
+}
+
+.picsBy h1{
+  color: var(--primary-color);
+  font-size: 3rem;
+  font-family: 'Big Shoulders Text', cursive;
+  font-weight: bolder;
 }
 
 li {
