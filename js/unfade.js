@@ -5,6 +5,8 @@ const body = document.body
 const containerAll = document.querySelector(".containerAll")
 const picsBy = document.querySelector(".picsBy ")
 
+
+
 repetitions = 0
 
 const unblur = setInterval(() => {
@@ -18,7 +20,7 @@ const unblur = setInterval(() => {
   containerAll.style.filter = `blur(${scaleFilter}px`
   picsBy.style.opacity=`${scalePicsBy}`
   timeGuard()  
-}, 15);
+}, 12);
 
 function timeGuard(){
   if (repetitions === 100 ){

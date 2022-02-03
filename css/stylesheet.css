@@ -34,7 +34,7 @@ a {
 .picsBy{
   text-align: center;
   opacity: 1;
-  position: absolute;
+  position: fixed;
   width: 100%;
   margin: 0 auto;
   top: 48vh;
@@ -442,6 +442,10 @@ Margins and padding
 
 @media(min-width: 768px){
   
+  .picsBy h1{
+    font-size: 5rem;
+  }
+
   .mega-grid{
     display: flex;
   }
