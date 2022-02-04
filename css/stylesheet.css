@@ -187,7 +187,11 @@ Navibar
 
 nav ul li a:hover{
   color: var(--primary-color);
-  border-bottom: 2px solid var(--primary-color);
+  /* border-bottom: 2px solid var(--primary-color); */
+  text-decoration: underline;
+  text-decoration-style: 5px dashed var(--primary-color);
+  text-underline-offset: 0.25rem;
+  text-decoration-thickness: 3px;
 }
 
 .dropdown{
@@ -196,6 +200,7 @@ nav ul li a:hover{
 
 .dropdown-menu{
   position: absolute;
+  min-width: 95px;
   top: 3.5rem;
   flex-direction: column;
   gap: 0.5rem;
