@@ -493,7 +493,7 @@ Margins and padding
   
   .galleryWrap .grid{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
   }
   .galleryWrap .grid a:nth-child(4){
     grid-column: 4 / span 2 ;

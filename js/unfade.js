@@ -13,10 +13,6 @@ const unblur = setInterval(() => {
   repetitions++
   let scaleFilter = scale(repetitions, 0, 100, 25, 0)
   let scalePicsBy = scale(repetitions, 0, 100, 1, 0)
-  console.log(repetitions)
-  console.log(scaleFilter)
-
-  console.log(scalePicsBy)
   containerAll.style.filter = `blur(${scaleFilter}px`
   picsBy.style.opacity=`${scalePicsBy}`
   timeGuard()  
