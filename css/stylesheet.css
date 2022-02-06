@@ -73,8 +73,18 @@ Containers
 }
 
 .description-container{
-  background-color: green;
-  
+  margin-bottom: 1.6rem;
+  /* padding-bottom: 1rem; */
+  background-color: var(--background-color);
+  /* position: fixed, block; */
+  /* top: inherit; */
+}
+.description-container .title-logo{
+  justify-content: center;
+}
+
+.title-logo p{
+  text-align: left;
 }
 
 /****
@@ -118,7 +128,7 @@ img {
 
 #C2bK{
   align-self: center;
-  height: 4.5rem;
+  height: 3.8rem;
   width: auto;
   justify-content: baseline;
 }
@@ -329,7 +339,6 @@ Galleries
   grid-column: 2 /span 2;
   grid-row: 4/span 1;
 }
-
 
 
 .socialGalleryWrap .grid img,
