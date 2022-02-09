@@ -256,41 +256,58 @@ nav ul li a:hover{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100vw;
 }
-
-.name-phone{
-  /* flex-direction: row; */
-  width: 100%;
-  /* border: 2px solid red; */
-  /* justify-content: center; */
-}
-
 
 form{
   border: 1px solid black;
   font-family: var(--small-text);
   width: 88%;
   margin-top: 1rem;
-  padding: 1rem;
+  padding: 0.8rem;
+}
+
+.name-phone{
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
 .form-control{
   width: 80%;
+  margin-bottom: 2rem;
 }
 
 .name-phone .form-control{
-  text-align: justify;
+  margin: 1rem 0.5rem;
 }
 
-form input{
-  width: 100%
+.form-control {
+  width: 100%;
+  padding: 0 0.5rem;
+  height: 3rem;
+  /* width: auto; */
 }
-form  .name-sirname input{
-  width: 90%;
+
+form input,
+textarea
+{
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+textarea{
+  margin-bottom: 1rem;
 }
 
 form label{
   display: block;
+  margin-top: 0.5rem;
+}
+
+.btn{
+  height: 2rem;
+  width: 5rem;
+  
 }
 
 
