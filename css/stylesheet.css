@@ -5,6 +5,8 @@
   --secondary-color: #FFD909 ;
   --text-color: #454242;
   --background-color: rgb(235, 232, 232);
+  --big-text: 'Big Shoulders Text', cursive;
+  --small-text: 'Cousine', monospace;
 }
 
 *{
@@ -245,6 +247,51 @@ nav ul li a:hover{
   transform: translateY(0);
   pointer-events: auto;
  } 
+
+
+/******
+  Forms
+*******/
+.form-container{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.name-phone{
+  /* flex-direction: row; */
+  width: 100%;
+  /* border: 2px solid red; */
+  /* justify-content: center; */
+}
+
+
+form{
+  border: 1px solid black;
+  font-family: var(--small-text);
+  width: 88%;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.form-control{
+  width: 80%;
+}
+
+.name-phone .form-control{
+  text-align: justify;
+}
+
+form input{
+  width: 100%
+}
+form  .name-sirname input{
+  width: 90%;
+}
+
+form label{
+  display: block;
+}
 
 
 /******
