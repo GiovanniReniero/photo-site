@@ -45,7 +45,7 @@
           <p class="xsm cousine mx-2">Since discovering photography a little later in life on an extended trip abroad, I have come to realise that a camera is not only a way to express one's creativity but also a means to freeze the world and expose what is missed from just a fleeting glimpse.</p>
           <!-- <h2 class="md text-center big-shoulders my-1">Let's chat</h2> -->
          
-          <p class="xsm cousine text-center mx-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, deleniti.</p>
+          <!-- <p class="xsm cousine text-center mx-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, deleniti.</p> -->
         </div>
       </div>
 
@@ -53,9 +53,9 @@
         <h2 class=" text-center md big-shoulders"> Let's chat </h2>
 
 
-        <form action="" id="form">
+        <form action="" id="form" class="flex">
         
-          <div class="name-phone flex">
+          <!-- <div class="name-phone flex"> -->
             <div class="form-control">
               <input type="text" required/>
               <label for="">Name</label>
@@ -65,9 +65,9 @@
               <input type="text" required/>
               <label for="">Sirname</label>
             </div>
-          </div><!--name-phone-->
+          <!-- </div>name-phone -->
 
-          <div class="name-phone flex">
+          <!-- <div class="name-phone flex"> -->
             <div class="form-control">
               <input type="text" required/>
               <label for="">e-mail</label>
@@ -77,16 +77,14 @@
               <input type="text"/>
               <label for="">Phone Number</label>
             </div>
-          </div> <!--name-phone-->
+          <!-- </div> name-phone -->
           
           <div class="form-control" >
-            <textarea id="query" rows="5"></textarea>
+            <textarea id="query" name="query" rows="2" class=""></textarea>
             <label for="">Your Query</label>
           </div>
           
-          <button class="btn">
-            <a href="#">Submit</a>
-          </button> 
+          <input type="submit" id="submit" class="cousine sm">
         
         </form>  
 
@@ -109,11 +107,9 @@
             </div>
           </div>
         </div>
-
-      
     </section>
-
-
   </div><!--Megagrid-->
+
+  <script src="js/form.js"></script>
 </body>
 </html>
