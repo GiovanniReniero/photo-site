@@ -196,6 +196,7 @@ Navibar
 *******/
 .navibarWrapper nav li{
   margin: 0 1rem;
+  /* z-index: 10; */
 }
 
 .navibarWrapper nav{
@@ -265,29 +266,59 @@ form{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  width: 72%;
+  /* width: 100vw; */
+  width: 80%;
   margin-top: 1rem;
   padding: 0.8rem;
   border-radius: 4px;
+  /* z-index: 0; */
 }
 
 .form-control{
-  width: 100%;
+  width: 80%;
   margin-bottom: 2.5rem;
   margin-top: 0.5rem ;
   padding: 0 0.5rem;
   position: relative;
 }
 
-input,
-textarea
+.form-control input
 {
-  width: 100%;
-  font-size: 1.4rem;
+  /* border:2px solid black; */
+  background: var(--background-color);
   border: none;
   border-bottom: 1px solid var(--text-color);
+  width: 100%;
+  font-size: 1.4rem;
+  padding: 1rem 0;
+}
+
+.form-control textarea{
   background: var(--background-color);
+  border: none;
+  border-bottom: 1px solid var(--text-color);
+  width: 100%;
+  font-size: 1rem;
+  padding: 1rem 0;
+}
+
+.form-control label
+{
+  position: absolute;
+  display: block;
+  /* margin-top: 0.5rem; */
+  left: 0;
+  top: 1rem;
+  padding-left: 0.5rem;
+}
+
+
+.form-control label span{
+  display: inline-block;
+  font-size: 1.2rem;
+  min-width: 5px ;
+  transition: 0.3s cubic-bezier(0.68, 0.55, 0.265, 1.55);
+  z-index: -1;
 }
 
 input:focus,
@@ -295,12 +326,21 @@ textarea:focus{
   outline: none;
 }
 
-form label{
-  display: block;
-  margin-top: 0.5rem;
-  position: absolute;
-  left: 0;
-  padding-left: 0.5rem;
+/* an input or textarea are in "focus" when they have been sulected and are ready for the input of text */
+
+
+.form-control input:focus + label span,
+.form-control input:valid + label span
+{
+  color: var(--primary-color);
+  transform: translateY(-2rem);
+}
+
+.form-control textarea:focus + label span,
+.form-control textarea:valid + label span
+{
+  color: var(--primary-color);
+  transform: translateY(-3rem);
 }
 
 #submit {
