@@ -620,17 +620,13 @@ Margins and padding
 
 
 @media(max-width: 399px){
-
-    #picturasdeljohn {
-      line-height: 1.2;
+   
+  #picturasdeljohn {
+      line-height: 1.3;
       text-align: center;
-      margin-bottom: 0.8rem;
-     
+      margin-bottom: 1rem;
     }
-
 }
-
-
 
 
 @media(min-width: 768px){
@@ -699,8 +695,7 @@ Margins and padding
   /* Galleries @Media Query*/
   
   
-  .galleryWrap .grid,
-  .socialGalleryWrap .grid
+  .galleryWrap .grid
   {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(8, 1fr);
@@ -758,7 +753,13 @@ Margins and padding
     grid-row: 8 / span 1;
   }
 
-.socialGalleryWrap .grid a:first-child{
+  .socialGalleryWrap .grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+
+  }
+
+  .socialGalleryWrap .grid a:first-child{
   grid-column:1 /span 2;
   grid-row: 1 /span 1;
 }
