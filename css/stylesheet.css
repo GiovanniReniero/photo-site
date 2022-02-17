@@ -196,7 +196,6 @@ Navibar
 *******/
 .navibarWrapper nav li{
   margin: 0 1rem;
-  /* z-index: 10; */
 }
 
 .navibarWrapper nav{
@@ -208,12 +207,16 @@ Navibar
 .navibarWrapper {
   background-color: var(--background-color);
   position: sticky;
+  position: -webkit-sticky;
   top: 0;
+}
+
+#about-wrapper{
+  position: static;
 }
 
 nav ul li a:hover{
   color: var(--primary-color);
-  /* border-bottom: 2px solid var(--primary-color); */
   text-decoration: underline;
   text-decoration-style: 5px dashed var(--primary-color);
   text-underline-offset: 0.25rem;
@@ -259,6 +262,7 @@ nav ul li a:hover{
   justify-content: center;
   align-items: center;
   width: 100vw;
+  
 }
 
 form{
@@ -271,7 +275,7 @@ form{
   margin-top: 1rem;
   padding: 0.8rem;
   border-radius: 4px;
-  /* z-index: 0; */
+ 
 }
 
 .form-control{
@@ -280,17 +284,18 @@ form{
   margin-top: 0.5rem ;
   padding: 0 0.5rem;
   position: relative;
+  /* z-index: -1; */
 }
 
 .form-control input
 {
-  /* border:2px solid black; */
   background: var(--background-color);
   border: none;
   border-bottom: 1px solid var(--text-color);
   width: 100%;
   font-size: 1.4rem;
   padding: 1rem 0;
+
 }
 
 .form-control textarea{
@@ -306,19 +311,18 @@ form{
 {
   position: absolute;
   display: block;
-  /* margin-top: 0.5rem; */
   left: 0;
   top: 1rem;
   padding-left: 0.5rem;
 }
-
 
 .form-control label span{
   display: inline-block;
   font-size: 1.2rem;
   min-width: 5px ;
   transition: 0.3s cubic-bezier(0.68, 0.55, 0.265, 1.55);
-  z-index: -1;
+  /* position: static; */
+  /* z-index: -1; */
 }
 
 input:focus,
@@ -665,6 +669,14 @@ Margins and padding
     transform: translateX(0);
   }
 
+  /* Forms @Media Query*/
+
+  form{
+    width: 640px
+  }
+  
+  
+  
   /* Galleries @Media Query*/
   
   
