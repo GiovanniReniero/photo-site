@@ -126,7 +126,6 @@ img {
 
 .about img{
   max-width: 40%;
-
   border-radius: 8px;
   box-shadow: 2px 2px 4px var(--text-color);
 }
