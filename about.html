@@ -15,7 +15,7 @@
 </head>
 <body #id="home">
   
-  <div class="mega-grid" id="aboutpage">
+  <div class="mega-grid mega-about" id="aboutpage">
     
     <!--Navibar-->
     <section class="navibarWrapper" id="about-wrapper">
@@ -42,19 +42,18 @@
       <div class="about container p-2">
         <img  src="images/gioport.jpg" alt="" id ="gioportrait">
         <div class="blurb ">
-          <h2 class="md text-center big-shoulders my-1">Giovanni</h2>
+          <h2 class="md text-center  big-shoulders my-1">Giovanni</h2>
           <p class="xsm cousine mx-2">Portraits, travel, events. I prefer B/W but shoot colour too. <br>Based in Essex, United Kindom.<br>
           Favourite photo quote: "F/8 and be there" <i> -Arthur Fellig </i>
 
           </p>
         </div>
-      </div>
-
-      <div class="form-container flex ">
-        <h2 class=" text-center md big-shoulders"> Let's chat </h2>
-
-        <form name="contact" method="Post" id="form" class="flex" data-netlify="true" data-netlify-recaptcha="true">
         
+        <div class="form-container my-3 flex ">
+          <h2 class="text-center md big-shoulders"> Let's chat </h2>
+          
+          <form name="contact" method="Post" id="form" class="flex" data-netlify="true" data-netlify-recaptcha="true">
+            
             <div class="form-control">
               <input type="text" required name="name"/>
               <label for="">Name</label>
@@ -64,17 +63,17 @@
               <input type="text" required name="surname"/>
               <label for="">Surname</label>
             </div>
-
+            
             <div class="form-control">
               <input type="email" required name="email"/>
               <label for="">e-mail</label>
-            
+              
             </div>
             <div class="form-control">
               <input type="tel" required name="phone"/>
               <label for="">Phone Number</label>
             </div>
-
+            
             
             <div class="form-control">
               <textarea rows="2" required name="query"></textarea>
@@ -84,10 +83,11 @@
             <div data-netlify-recaptcha="true">
             </div>
             
-          <input type="submit" id="submit" class="cousine sm">
-        
-        </form>  
-
+            <input type="submit" id="submit" class="cousine sm">
+            
+          </form>  
+        </div><!--aboutWrap Container-->
+          
 
       </div> <!--Form-Container-->
       

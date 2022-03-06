@@ -91,7 +91,6 @@ Containers
 }
 
 
-
 /****
 Grid TEMPLATES
 *****/
@@ -218,9 +217,6 @@ Navibar
   top: 0;
 }
 
-#about-wrapper{
-  position: static;
-}
 
 nav ul li a:hover{
   color: var(--primary-color);
@@ -494,6 +490,12 @@ About
   padding-top: 2em;
 }
 
+#about-wrapper{
+  position: static;
+}
+
+
+
 /*****************
 Margins and padding
 *******************/
@@ -650,8 +652,11 @@ Margins and padding
     display: flex;
   }
 
-
-  /* Navibar @Media Query */
+  .mega-page,
+  .mega-about{
+    max-width: 1400px;
+    margin: 0 auto;
+  }
 
   .navibarWrapper nav {
     /* flex-direction: column; */
@@ -681,7 +686,6 @@ Margins and padding
     position: sticky;
     top: 0;
   }
-
   
   .dropdown-menu{
     position: absolute;
@@ -701,7 +705,6 @@ Margins and padding
   form{
     width: 640px
   }
-  
   
   /* Galleries @Media Query*/
   
@@ -848,3 +851,15 @@ Margins and padding
     grid-row: 2 /span 1;
   }
 
+}
+
+@media(min-width: 1400px){
+  .mega-page{
+    max-width: 1400px;
+    justify-content: center;
+  }
+  .index-page{
+    max-width: 1950px;
+    justify-content: center;
+  }
+}
