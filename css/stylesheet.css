@@ -658,6 +658,12 @@ Margins and padding
     margin: 0 auto;
   }
 
+  #about-wrapper{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+  }
+
   .navibarWrapper nav {
     /* flex-direction: column; */
     text-align: center;
