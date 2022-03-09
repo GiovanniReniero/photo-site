@@ -226,11 +226,13 @@ nav ul li a:hover{
   text-decoration-thickness: 3px;
 }
 
-.dropdown{
+.dropdown,
+.dropdown-travel{
   position: relative;
 }
 
-.dropdown-menu{
+.dropdown-menu,
+.dropdown-menu-travel{
   position: absolute;
   min-width: 130px;
   top: 3.5rem;
