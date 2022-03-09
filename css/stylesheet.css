@@ -471,7 +471,55 @@ Galleries
   grid-row: 4/span 1;
 }
 
+/* TRAVEL ITALY GALLERY */
+.italyGalleryWrap .grid a:first-child{
+  grid-column: 1 /span 3;
+  grid-row: 1 /span 4;
+}
+.italyGalleryWrap .grid a:nth-child(2){
+  grid-column: 1 /span 3;
+  grid-row: 5 /span 2;
+}
+.italyGalleryWrap .grid a:nth-child(3){
+  grid-column: 1 /span 1;
+  grid-row: 7 /span 1;
+}
+.italyGalleryWrap .grid a:nth-child(4){
+  grid-column: 2 /span 2;
+  grid-row: 7 /span 1;
+}
+.italyGalleryWrap .grid a:nth-child(5){
+  grid-column: 1 /span 2;
+  grid-row: 8 /span 1;
+}
+.italyGalleryWrap .grid a:nth-child(6){
+  grid-column: 3 /span 1;
+  grid-row: 8 /span 1;
+}
+.italyGalleryWrap .grid a:nth-child(7){
+  grid-column: 1 /span 1;
+  grid-row: 9 /span 1;
+}
+.italyGalleryWrap .grid a:nth-child(8){
+  grid-column: 2 /span 2;
+  grid-row: 9 /span 1;
+}
+.italyGalleryWrap .grid a:nth-child(9){
+  grid-column: 1 /span 1;
+  grid-row: 10 /span 1;
+}
+.italyGalleryWrap .grid a:nth-child(10){
+  grid-column: 2 /span 2;
+  grid-row: 10 /span 1;
+}
+.italyGalleryWrap .grid a:nth-child(11){
+  grid-column: 1 /span 2;
+  grid-row: 11 /span 1;
+}
 
+
+.italyGalleryWrap .grid img,
+.italyGalleryWrap .grid a,
 .socialGalleryWrap .grid img,
 .socialGalleryWrap .grid a,
 .theatreGalleryWrap .grid img,
