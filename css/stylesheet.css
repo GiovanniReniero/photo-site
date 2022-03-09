@@ -251,7 +251,13 @@ nav ul li a:hover{
   transition: opacity 250ms ease-in-out, transform 250ms ease-in-out; 
 }
 
- .active > .link + .dropdown-menu { 
+.dropdown-menu-travel{
+  top: 2.2rem;
+  left: 2.2rem;
+}
+
+ .active > .link + .dropdown-menu,
+ .active > .link + .dropdown-menu-travel{ 
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
