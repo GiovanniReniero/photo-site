@@ -964,7 +964,6 @@ Margins and padding
   }
 
 
-
   .italyGalleryWrap .grid{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(2, 1fr);
@@ -1047,11 +1046,11 @@ Margins and padding
     grid-row: 11/span 1;
   } 
   .italyGalleryWrap .grid a:nth-child(18){
-    grid-column: 3 /span 4;
+    grid-column: 1 /span 3;
     grid-row: 12/span 1;
   } 
   .italyGalleryWrap .grid a:nth-child(21){
-    grid-column: 1 /span 4;
+    grid-column: 1/span 3;
     grid-row: 13/span 1;
   } 
 
