@@ -1101,6 +1101,9 @@ Margins and padding
     grid-row: 13/span 1;
   } 
 
+  /* Events Gallery maintains the same grid configuration as per mobile format */
+
+
 }
 
 @media(min-width: 1400px){
